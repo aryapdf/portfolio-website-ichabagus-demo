@@ -6,17 +6,19 @@
     <title>Portfolio Tailwind CSS</title>
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
+  <body class="bg-white">
     <!-- Hero Section Start-->
     <section id="home" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1
-              class="text-base font-semibold text-primary md:text-xl lg:text-2xl"
+              class="text-base font-semibold text-secondary md:text-xl lg:text-2xl"
             >
               Hello There! 🙌 This is
-              <span class="block font-bold text-secondary text-4xl lg:text-5xl">
+              <span
+                class="block font-bold text-primary text-4xl lg:text-5xl mb-1"
+              >
                 Arya Pradana</span
               >
             </h1>
@@ -24,9 +26,6 @@
               Web Developer | Finance Enthusiast | Musician
             </h2>
             <p class="font-medium text-slate-400 mb-10 leading-relaxed">
-              <span class="font-semibold text-slate-700"
-                >Please fill your description as soon as possible.</span
-              >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Dignissimos in cupiditate alias at saepe consequatur dolorum iste,
               quas nemo asperiores.
@@ -52,7 +51,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#0284C7"
+                    fill="#00A9FF"
                     d="M57.9,0C57.9,29.3,28.9,58.7,-1.6,58.7C-32.1,58.7,-64.2,29.3,-64.2,0C-64.2,-29.4,-32.1,-58.9,-1.6,-58.9C28.9,-58.9,57.9,-29.4,57.9,0Z"
                     transform="translate(100 100)"
                   />
@@ -64,5 +63,50 @@
       </div>
     </section>
     <!-- Hero Section End-->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10">
+            <h4 class="font-bold uppercase text-secondary text-lg mb-3">
+              About Me
+            </h4>
+            <h2 class="font-bold text-primary max-w-md text-3xl mb-3">
+              Learn something new, everyday!
+            </h2>
+            <p class="font-medium text-base text-slate-500 max-w-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio
+              ipsam incidunt voluptates perspiciatis esse illo debitis nisi
+              beatae deleniti?
+            </p>
+          </div>
+          <div class="w-full px-4">
+            <h3 class="font-semibold text-secondary text-2xl mb-4">
+              Lorem ipsum dolor sit amet
+            </h3>
+            <p class="font-medium text-base text-slate-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+              sapiente a reprehenderit nesciunt iure eum quidem non ullam
+              aspernatur rerum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Aside Section Start-->
+    <aside class="container fixed end-0">
+      <div class="h-full flex">
+        <ul class="px-4 py-6 rounded-tl-xl rounded-bl-xl">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- Aside Section Start-->
   </body>
 </html>
