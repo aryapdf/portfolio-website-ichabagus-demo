@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwind CSS</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Font Awesomw-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="bg-white">
+  <body class="bg-white relative">
     <!-- Hero Section Start-->
     <section id="home" class="pt-36">
       <div class="container">
@@ -42,21 +50,8 @@
               <img
                 src="assets/img/arya-removebg.png"
                 alt="Arya Pradana"
-                class="w-96 max-w-full mx-auto"
+                class="w-64 h-64 mx-auto rounded-full bg-primary object-cover lg:w-96 lg:h-96"
               />
-              <span class="absolute -bottom-32 left-1/2 -translate-x-1/2 -z-10">
-                <svg
-                  width="600"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#00A9FF"
-                    d="M57.9,0C57.9,29.3,28.9,58.7,-1.6,58.7C-32.1,58.7,-64.2,29.3,-64.2,0C-64.2,-29.4,-32.1,-58.9,-1.6,-58.9C28.9,-58.9,57.9,-29.4,57.9,0Z"
-                    transform="translate(100 100)"
-                  />
-                </svg>
-              </span>
             </div>
           </div>
         </div>
@@ -68,27 +63,29 @@
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4 class="font-bold uppercase text-secondary text-lg mb-3">
               About Me
             </h4>
-            <h2 class="font-bold text-primary max-w-md text-3xl mb-3">
+            <h2
+              class="font-bold text-primary max-w-md text-3xl mb-3 lg:text-4xl"
+            >
               Learn something new, everyday!
             </h2>
-            <p class="font-medium text-base text-slate-500 max-w-xl">
+            <p
+              class="font-medium text-base text-slate-500 max-w-xl lg:text-lg"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio
               ipsam incidunt voluptates perspiciatis esse illo debitis nisi
               beatae deleniti?
             </p>
           </div>
-          <div class="w-full px-4">
-            <h3 class="font-semibold text-secondary text-2xl mb-4">
-              Lorem ipsum dolor sit amet
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-secondary text-2xl mb-4 lg:text-3xl lg:pt-10">
+              Let's be friends!
             </h3>
             <p class="font-medium text-base text-slate-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              sapiente a reprehenderit nesciunt iure eum quidem non ullam
-              aspernatur rerum.
+              You can go directly to my personal github repository, linkedin, and instagram by click on the icon at the right side of your screen. Simple isn't it?
             </p>
           </div>
         </div>
@@ -97,13 +94,32 @@
     <!-- About Section End -->
 
     <!-- Aside Section Start-->
-    <aside class="container fixed end-0">
+    <aside class="fixed inset-y-0 right-0">
       <div class="h-full flex">
-        <ul class="px-4 py-6 rounded-tl-xl rounded-bl-xl">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul
+          class="px-4 py-6 rounded-tl-2xl rounded-bl-2xl m-auto flex flex-col flex-nowrap items-center justify-center gap-8 bg-primary"
+        >
+          <li class="list-none">
+            <a
+              href=""
+              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="list-none">
+            <a
+              href=""
+              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="list-none">
+            <a
+              href=""
+              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
         </ul>
       </div>
     </aside>
