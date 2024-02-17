@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwind CSS</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesomw-->
     <link
       rel="stylesheet"
@@ -14,7 +21,80 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-white relative">
+  <body class="">
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class=""
+              ><img
+                src="./assets/img/viyo-white.png"
+                alt="Logo Website"
+                class="w-20 h-20 rounded-full relative object-cover"
+            /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-700 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line scale-1 transition duration-700 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-700 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-primary shadow-lg rounded-b-lg max-w-[250px] w-full right-5 top-[5rem] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base font-montserrat font-semibold text-third py-2 mx-8 flex group-hover:text-white lg:text-primary lg:group-hover:bg-primary lg:group-hover:text-white lg:px-4 lg:rounded-full transition duration-200 ease-in-out"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base font-montserrat font-semibold text-third py-2 mx-8 flex group-hover:text-white lg:text-primary lg:group-hover:bg-primary lg:group-hover:text-white lg:px-4 lg:rounded-full transition duration-200 ease-in-out"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base font-montserrat font-semibold text-third py-2 mx-8 flex group-hover:text-white lg:text-primary lg:group-hover:bg-primary lg:group-hover:text-white lg:px-4 lg:rounded-full transition duration-200 ease-in-out"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base font-montserrat font-semibold text-third py-2 mx-8 flex group-hover:text-white lg:text-primary lg:group-hover:bg-primary lg:group-hover:text-white lg:px-4 lg:rounded-full transition duration-200 ease-in-out"
+                    >Clients</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero Section Start-->
     <section id="home" class="pt-36">
       <div class="container">
@@ -25,15 +105,17 @@
             >
               Hello There! 🙌 This is
               <span
-                class="block font-bold text-primary text-4xl lg:text-5xl mb-1"
+                class="block font-bold text-primary text-4xl lg:text-5xl mb-1 font-montserrat"
               >
                 Arya Pradana</span
               >
             </h1>
-            <h2 class="font-medium text-slate-500 text-lg mb-5 lg:2xl">
+            <h2
+              class="font-medium font-montserrat text-slate-500 text-lg mb-5 lg:2xl"
+            >
               Web Developer | Finance Enthusiast | Musician
             </h2>
-            <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+            <p class="font-medium text-slate-500 mb-10 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Dignissimos in cupiditate alias at saepe consequatur dolorum iste,
               quas nemo asperiores.
@@ -41,7 +123,7 @@
 
             <a
               href="#"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full border-2 border-primary hover:bg-white hover:shadow-lg hover:text-primary transition duration-200 ease-in-out"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full border-2 border-primary hover:bg-white hover:shadow-lg hover:text-primary transition duration-200 ease-in-out font-montserrat"
               >Contact Me!</a
             >
           </div>
@@ -68,24 +150,26 @@
               About Me
             </h4>
             <h2
-              class="font-bold text-primary max-w-md text-3xl mb-3 lg:text-4xl"
+              class="font-bold text-primary max-w-md text-3xl mb-3 lg:text-4xl font-montserrat"
             >
               Learn something new, everyday!
             </h2>
-            <p
-              class="font-medium text-base text-slate-500 max-w-xl lg:text-lg"
-            >
+            <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio
               ipsam incidunt voluptates perspiciatis esse illo debitis nisi
               beatae deleniti?
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="font-semibold text-secondary text-2xl mb-4 lg:text-3xl lg:pt-10">
+            <h3
+              class="font-bold text-primary text-3xl mb-4 lg:text-4xl lg:pt-10 font-montserrat"
+            >
               Let's be friends!
             </h3>
-            <p class="font-medium text-base text-slate-500">
-              You can go directly to my personal github repository, linkedin, and instagram by click on the icon at the right side of your screen. Simple isn't it?
+            <p class="font-medium text-base text-slate-500 pt-8 lg:text-lg">
+              You can go directly to my personal github repository, linkedin,
+              and instagram by click on the icon at the right side of your
+              screen. Simple isn't it?
             </p>
           </div>
         </div>
@@ -102,21 +186,21 @@
           <li class="list-none">
             <a
               href=""
-              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white"
+              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white transition duration-200 ease-in-out"
               ><i class="fab fa-github"></i
             ></a>
           </li>
           <li class="list-none">
             <a
               href=""
-              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white"
+              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white transition duration-200 ease-in-out"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
           <li class="list-none">
             <a
               href=""
-              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white"
+              class="no-underline font-medium text-4xl text-third rounded-md hover:text-white transition duration-200 ease-in-out"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
@@ -124,5 +208,6 @@
       </div>
     </aside>
     <!-- Aside Section Start-->
+    <script src="./dist/JS/script.js"></script>
   </body>
 </html>
