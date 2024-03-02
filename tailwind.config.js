@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html"],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -12,14 +13,15 @@ module.exports = {
         secondary: "#89CFF3",
         third: "#A0E9FF",
         fourth: "#CDF5FD",
+        dark: "#111827",
       },
       screens: {
         "2xl": "1320px",
       },
       fontFamily: {
-        montserrat: ["Montserrat", 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
